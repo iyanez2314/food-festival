@@ -22,7 +22,7 @@ module.exports = {
                         options: {
                             esModule: false,
                             name(file){
-                                return "[path][name].[text]"
+                                return "[path][name].[ext]"
                             },
                             publicPath: function(url){
                                 return url.replace("../", "/assets/")
